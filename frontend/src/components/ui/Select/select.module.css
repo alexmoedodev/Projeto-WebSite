@@ -1,0 +1,68 @@
+.field__label{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.label{
+    font-size: 0.8rem;
+    color: var(--color-gray);
+}
+
+
+.select {
+    padding: 4px 8px;
+    border: 1px solid rgba(128, 128, 128, 0.24);
+    border-radius: 4px;
+    outline: none;
+    font-size: 12px;
+    color: var(--color-gray);
+    transition: all 0.5s ease;
+}
+
+.select::placeholder {
+    font-size: 0.8rem;
+}
+
+.select:focus {
+    box-shadow: 0 0 0.3rem  var(--color-violet);
+}
+
+.w-full {
+    width: 100%;
+}
+.w-fit {
+    width: fit-content;
+}
+.w-sm{
+    width: 100px;
+}
+.w-md{
+    width: 300px;
+}
+.w-lg{
+    width: 400px;
+}
+
+
+
+.h-sm{
+    height: 25px;
+}
+.h-md{
+    height: 30px;
+}
+
+.h-lg{
+    height: 40px;
+}
+
+@media (max-width:768px) {
+    .field__label{
+        width: 100%;
+    }
+    .select{
+        width: 100%;
+    }
+    
+}

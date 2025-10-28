@@ -1,0 +1,1 @@
+export const apiCep = "https://brasilapi.com.br/api/cep/v1/"

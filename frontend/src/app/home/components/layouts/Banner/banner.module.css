@@ -1,0 +1,155 @@
+.container__banner {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 36px;
+}
+
+.content {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "banner__one banner__two";
+  gap: 20px;
+}
+
+.banner__one {
+  background-image: url(../../../../../../public/ad-discount.png);
+  grid-area: banner__one;
+}
+.banner__two {
+  background-image: url(../../../../../../public/ad-timer.png);
+  grid-area: banner__two;
+}
+.banner__one,
+.banner__two {
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.border__banner {
+  border: 2px solid var(--color-white);
+  height: 100%;
+  width: 100%;
+}
+
+.content__banner__one {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: var(--color-white);
+  margin: 30px 0px;
+  padding-left: 24px;
+}
+
+.content__banner__one label {
+  text-transform: uppercase;
+  margin: 20px 0px;
+}
+
+.content__banner__one h1 {
+  font-size: 3rem;
+}
+
+.content__banner__two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+  margin: 30px auto;
+  gap: 20px;
+}
+
+.content__banner__two label {
+  text-transform: uppercase;
+  margin: 20px 0px;
+}
+
+.content__banner__two h1 {
+  font-size: 3rem;
+}
+
+.deals__off {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.day__timer {
+  background-color: #4d737c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+  padding: 4px 8px;
+}
+
+.day__timer span {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.day__timer hr {
+  border: 1px solid var(--color-white);
+  min-width: 100%;
+}
+.day__timer label {
+  font-size: 0.8rem;
+}
+
+@media (max-width: 1100px) {
+  .content {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "banner__one "
+      "banner__two";
+    gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .content h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .container__banner {
+    padding: 16px;
+  }
+  .day__timer {
+    padding: 6px 10px;
+  
+  }
+  .day__timer span {
+    font-size: 2rem;
+  }
+
+  .day__timer label {
+    font-size: 0.5rem;
+  }
+}
+
+@media (max-width:375px) {
+   .content h1 {
+    font-size: 1.5rem;
+  }
+  .day__timer {
+    padding: 4px ;
+  
+  }
+}

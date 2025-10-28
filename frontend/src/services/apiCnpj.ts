@@ -1,0 +1,1 @@
+export const apiCnpj = "https://brasilapi.com.br/api/cnpj/v1/"

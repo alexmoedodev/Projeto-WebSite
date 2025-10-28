@@ -1,0 +1,49 @@
+.container {
+  margin: 70px auto;
+  width: 100%;
+  height: auto;
+}
+
+.content {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 30px auto;
+  padding: 16px;
+  overflow-x: hidden;
+  gap: 30px;
+}
+
+
+.services {
+  display: flex;
+  width: 200px;
+  align-items: center;
+  gap: 10px;
+}
+
+.services span {
+  font-size: 4rem;
+  color: var(--color-accent);
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8rem;
+  gap: 5px;
+}
+
+.details label {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.details span {
+  color: var(--color-gray);
+  font-size: 0.8rem;
+}
+
